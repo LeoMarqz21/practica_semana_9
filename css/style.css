@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --lite-red:rgb(226, 0, 0);
+    --l-lite-red: rgb(197, 2, 2);
+    --orange:rgb(251, 124, 20);
+}
+
+body{
+    height: 100vh;
+}
+/* == HEADER == */
+header{
+    background: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding:40px;
+    box-shadow: 0px 2px 5px var(--lite-red);
+    margin-bottom: 50px;
+}
+
+
+header h1{
+    color: var(--lite-red);
+    margin-right: 20px;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+header img{
+    width: 100px;
+}
+
+/* == MAIN == */
+
+main {
+    width: 100%;
+    max-width: 700px;
+    margin:auto;
+    padding: 15px;
+    /* border:1px solid var(--lite-red); */
+}
+
+main h2{
+    text-transform: uppercase;
+    color:var(--lite-red);
+}
+
+main form {
+    display:grid;
+    grid-template-columns: 1fr;
+
+}
+main form .input{
+    width: 100%;
+    padding: 5px;
+}
+
+main form .input .group{
+    display: flex;
+}
+
+main form .input .group .select{
+    width:80%;
+}
+
+main form .input .group .number{
+    width:20%;
+}
+
+main form .input input[type="text"], input[type="number"]{
+    width: 100%;
+    padding: 10px;
+}
+
+main form .input select{
+    width: 100%;
+    padding: 10px;
+}
+
+main form .input #send{
+    width: 150px;
+    padding: 15px;
+    color: white;
+    background: var(--lite-red);
+    outline: none;
+}
+
+
+main form .input #send:hover{
+    background: var(--l-lite-red);
+    cursor: pointer;
+}
+
+main .card{
+    margin-top: 25px;
+    padding: 25px;
+    box-shadow:  1px 1px 3px var(--lite-red);
+}
+
+main .card .data{
+    margin-bottom: 10px;
+}
+
+main .card .data input[type="text"]{
+    height:35px;
+    padding:5px;
+    margin-bottom: 5px;
+}
+
+main .card .data #name_client, #address_client{
+    width: 100%;
+}
+
+
+
+
+/* == MEDIA QUERYS*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

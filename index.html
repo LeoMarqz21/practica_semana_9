@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/pizza.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pizza Lite</title>
+</head>
+<body>
+    <header>
+        <h1>PIZZA LITE</h1>
+        <img src="images/pizza.png" alt="icon pizza">
+    </header>
+    <main>
+        <h2>CALCULAR COSTO DE PEDIDO</h2>
+        <form id="form">
+            <div class="input">
+                <label for="">Nombre Completo</label>
+                <input type="text" name="name" id="name" placeholder="ejemplo: Lee Ruaka" autofocus>
+            </div>
+            <div class="input">
+                <label for="">Dirección</label>
+                <input type="text" name="address" id="address" placeholder="ejemplo: caserio ironia" autofocus>
+            </div>
+            <div class="input">
+                <div class="group">
+                    <div class="select">
+                        <label for="">Tipo de pizza </label>
+                        <select name="type_pizza">
+                          <option value="personal">Personal</option>
+                          <option value="grande">Grande</option>
+                          <option value="gigante">Gigante</option>
+                        </select>
+                    </div>
+                    <div class="number">
+                        <label for="">Cantidad </label>
+                        <input type="number" name="units_pizza" value="0">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="input">
+                        <label for="">Tipo de masa: </label>
+                        <select name="type_mass">
+                           <option value="pan_pizza">Pan Pizza</option>
+                           <option value="masa_alta">Masa Alta</option>
+                        </select>
+                
+            </div>
+            <div class="input">
+                <label for="">El pedido se efectuo a traves de: </label>
+                <select name="type_media">
+                    <option value="telefono">Via Telefono</option>
+                    <option value="internet">Internet</option>
+                    <option value="sucursal">Sucursal</option>
+                </select>
+            </div>
+            <div class="input">
+                <label for="">Tipo de cliente: </label>
+                <select name="type_client">
+                    <option value="frecuente">Frecuente</option>
+                    <option value="grande">Grande</option>
+                    <option value="empresarial">Empresarial</option>
+                </select>
+            </div>
+            <div class="input">
+                <button id="send" name="send">Calcular Costo</button>
+            </div>
+        </form>
+
+        <div class="card">
+            <div class="data">
+                <label for="">Nombre de cliente: </label>
+                <input type="text"  id="name_client" disabled>
+            </div>
+            <div class="data">
+                <label for="">Direccion de cliente: </label>
+                <input type="text"  id="address_client" value="llano alegre" disabled>
+            </div>
+            <div class="data">
+                <h4>Pedido</h4>
+                <label for="">Producto: </label>
+                <input type="text" id="product" disabled />
+                <label for="">Unidades</label>
+                <input type="text" id="units" disabled />
+            </div>
+            <div class="data">
+                <label for="">Descuento: </label>
+                <input type="text" id="discount" disabled />
+                <label for="">Total a pagar: </label>
+                <input type="text"  id="total" disabled>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/index.js" type="module"></script>
+</body>
+</html>
