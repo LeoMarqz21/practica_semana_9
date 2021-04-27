@@ -7,7 +7,7 @@ form.addEventListener('submit', (event)=>{
 
     const send = new SendData();
 
-    const res = send.validar();
+    const res = send.validate();
     send.send(res);
     send.clean();
 

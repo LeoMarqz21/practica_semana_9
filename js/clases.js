@@ -14,7 +14,7 @@ export class SendData{
         this._total = document.getElementById('total');
     }
 
-    validar(){
+    validate(){
         if(this.name.length < 10 || this.name == ""){
             alert("Nombre muy corto o esta vacio, ingresa tu nombre completo");
         }else{
